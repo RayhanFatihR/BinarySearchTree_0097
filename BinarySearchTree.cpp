@@ -84,7 +84,24 @@ class BinaryTree
         parent = nullptr;
         while((currentNode != nullptr) && (currentNode->info != element))
         {
-            
+            parent = currentNode;
+            if (element < currentNode->info)
+                currentNode = currentNode->leftchild; 
+            else
+                currentNode = currentNode->rightchild;
         }
+    }
+
+    void inorder(Node *ptr)
+    {
+        if(isEmpty())
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if(ptr== nullptr)
+            return;
+        
+        
     }
 };
