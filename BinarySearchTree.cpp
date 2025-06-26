@@ -116,6 +116,9 @@ class BinaryTree
     void preorder(Node *ptr)
     {
         if (isEmpty())
-        
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
     }
 };
