@@ -111,6 +111,11 @@ class BinaryTree
         inorder(ptr->leftchild); 
         cout << ptr->info << " "; // parent
         inorder(ptr->rightchild); 
+    }
+
+    void preorder(Node *ptr)
+    {
+        if (isEmpty())
         
     }
 };
