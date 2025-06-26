@@ -45,7 +45,7 @@ class BinaryTree
         // Step 4: Locate the node which will be the parent of the new node to be inserted
         Node *parent = nullptr;
         Node *currentNode = nullptr;
-        seacrh(x, parent, currentNode);
+        search(x, parent, currentNode);
 
         // Step 5: If parent is NULL (Tree is empty)
         if (parent == nullptr)
@@ -65,6 +65,11 @@ class BinaryTree
 
             // 6b: Exit
             return;
+        }
+        // Step 7: If the value in the data field of the new node is greater than or equal to the parent
+        else if(x > parent->info)
+        {
+            
         }
     }
 };
