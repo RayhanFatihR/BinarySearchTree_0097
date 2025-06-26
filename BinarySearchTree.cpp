@@ -46,5 +46,11 @@ class BinaryTree
         Node *parent = nullptr;
         Node *currentNode = nullptr;
         seacrh(x, parent, currentNode);
+
+        // Step 5: If parent is NULL (Tree is empty)
+        if (parent == nullptr)
+        {
+            
+        }
     }
 };
